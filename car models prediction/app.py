@@ -12,7 +12,7 @@ app = Flask(__name__)
 def Home():
     return render_template('index.html')
 
-
+# test purpose
 standard_to = StandardScaler()
 @app.route("/predict", methods=['POST'])
 def predict():
@@ -51,3 +51,4 @@ def predict():
 
 if __name__=="__main__":
     app.run(debug=True)
+
